@@ -1,0 +1,1107 @@
+@import"./common/all.css";
+@import"./common/header.css";
+@import"./common/footer.css";
+
+
+body{
+    background-color: #e4e3e287;
+}
+
+.bn{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* margin-top: 80px;    */
+    z-index: 2;
+    background-image: url("../images/teacher/teacherbn_05.jpg");
+    /* background-image: url("../images/teacher/teacherbn_02.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.bn_child{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+}
+.bn_text{
+    /* border: 1px solid black; */
+    padding-top: 10px;
+
+}
+.bn_text h1{
+    text-align: center;
+    color: #00a9b8;
+}
+
+.bn_pic{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.bn_pic img{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+
+/* --------main-------- */
+.main{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    width: 100%;
+    margin:0px auto;
+    background-color: white;
+}
+
+section{
+    /* border: 1px solid black; */
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+
+
+}
+
+/* --------麵包屑-------- */
+
+.breadcrumb{
+    padding: 5px 10px;
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
+}
+.breadcrumb .breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.breadcrumb .breadcrumb_list > li{
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.breadcrumb .breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: #aaa;
+    margin-right: 12px;
+}
+
+.breadcrumb .breadcrumb_list > li:first-child::before{
+    content: "";
+    margin-right: 0;
+}
+  
+  
+.breadcrumb .breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #003338;
+    font-size: 18px;
+
+}
+  
+.breadcrumb .breadcrumb_list > li > a:hover{
+    color: #00a9b8;
+}
+
+
+/* ----老師介紹 細節---- */
+
+.introduction{
+    margin: 20px auto;
+}
+.introduction >h2{
+    border-right: 3px solid #f0ad78;
+    border-left: 3px solid #f0ad78;
+    width: 20%;
+    margin: 20px  auto;
+    min-width: 200px;
+
+}
+
+.introduce.block{
+    /* border: 1px solid blue; */
+    width: 95%;
+    max-width: 1200px;
+    /* height: 400px; */
+    margin: 0px auto;
+}
+
+.introduce_main{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    width: 99%;
+    margin: 0 auto;
+    border-radius: 0 0 0 10px;
+    background-image: linear-gradient(to bottom left, white 50%, #f0ad78 50%, #f0ad78 100%);
+    text-align: center;
+    display: block;
+
+}
+
+.introduce.pic{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30%;
+    /* border: 1px solid yellow; */
+    /* transform: translateZ(2); */
+}
+
+.introduce.pic img{
+    height: 450px;
+    position: relative;
+}
+
+.introduce.pic >img:last-child{
+    display: none;
+}
+
+.introduce.text{
+    width: 70%;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 30px;
+    border-top: 1px solid #edf0f0;
+    border-left: 1px solid #edf0f0;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+    margin: 2px auto;
+    margin-top: 30px;
+    /* transform: translateZ(-1); */
+    /* border: 1px solid red; */
+     
+}
+.introduce.text h2{
+    color: #f0ad78;
+    margin: 5px auto;
+    text-align: left;
+}
+.introduce.text h2 a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.introduce.text ul{
+    margin: 10px auto;
+}
+.good li{
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+}
+.good li > a{
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+
+.introduce.text > a{
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    color: #00a9b8;
+    position: relative;
+}
+.introduce.text > a::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 5px 9px;
+    border-color: transparent transparent transparent #f0ad78;
+}
+.introduce.text > a:hover{
+    text-align: right;
+    color: #f0ad78;
+}
+
+
+
+
+
+/* =====學員推薦===== */
+
+.studentad{
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.studentad > h2{
+    border-right: 3px solid #f0ad78;
+    border-left: 3px solid #f0ad78;
+    width: 20%;
+    margin: 20px  auto;
+    min-width: 200px;
+
+}
+.studlock_B{
+    display: none;
+}
+
+.stud_block{
+    border: 4px double #00a9b8;
+    border-radius: 5px;
+    display: inline-flex;
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    /* height: 400px; */
+    margin: 10px 10px;
+    padding: 5px;
+    /* border: 1px solid red; */
+}
+.stud_block img{
+    width: 100px;
+    border-radius: 5px;
+}
+.studtext{
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0 5px;
+    text-align: left;
+    width: 70%;
+}
+.studtext h3{
+    color: #555858;
+}
+
+.studtext_freecourse{
+    margin: 10px auto 0 auto;
+    position: relative;
+}
+.studtext_freecourse p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
+    width: 200px;
+}
+
+.studtext_freecourse >a:last-child{
+    font-size: 16px;
+    color: #00a9b8;
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+}
+
+.studtext_freecourse::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    bottom: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 5px 9px;
+    border-color: transparent transparent transparent #f0ad78;
+}
+
+.studtext_freecourse >a:last-child:hover{
+    color: #f0ad78;
+}
+
+
+
+
+
+/* ======最新開課資訊====== */
+.newCourse{
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    max-width:600px;
+    margin: 20px auto;
+}
+
+.newCourse h2{
+    border-right: 3px solid #f0ad78;
+    border-left: 3px solid #f0ad78;
+    width: 20%;
+    min-width: 200px;
+    margin: 20px  auto;
+}
+
+.blocks.course{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+
+.news_pg{
+    max-width: 200px;
+    width: 90%;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+.news_pg >a{
+    display: flex;
+    flex-direction: row; 
+}
+.news_pg a img{
+    width: 100%;
+}
+.news_pg_B{
+    display: flex;
+}
+.news_pg_B a{
+    /* border: 1px solid red; */
+    display: inline-flex;
+    justify-content: center;
+    background-color: #bfe3e7;
+    width: 50%;
+    padding: 10px 0;
+    color: #003338;
+    font-size: 16px;
+}
+
+.news_pg_B a:last-child{
+    padding: 20px 0;
+}
+
+.news_pg_B a:hover{
+    color: white;
+    background-color: #00a9b8;
+}
+.news_pg a:last-child{
+    background-color: #00a9b8;
+}
+
+.news_pg a:last-child h5{
+    color: white;
+
+}
+
+/* ========老師介紹  高中======== */
+
+.teacher{
+    padding: 0 2%;
+    text-align: center;
+}
+.teacher_B{
+    display: none;
+
+}
+
+.teacher_tab{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 8px double #00a9b8;
+    border-bottom: 8px double #00a9b8;
+    /* border: 1px solid blue; */
+    text-align: center;
+
+}
+
+.tab_list_block {
+    /* border: 1px solid blue; */
+    padding-left: 5%;
+    text-align: left;
+}
+
+/* =============頁籤列表============= */
+ul.tab_list{
+    /* border-radius: 50%; */
+    /* background-color: #00a9b8; */
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+}
+
+ul.tab_list > li{
+    display: inline-block;
+    /* background-color: #00a9b8; */
+    padding: 0px 10px;
+
+
+}
+ul.tab_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 1px; 
+}
+
+ul.tab_list > li > a.-on{
+    border: 1px solid #00a9b8;
+    background-color: #00a9b8;
+    color: white;
+}
+
+ul.tab_list > li > a.Ju.-on{
+    border: 1px solid #f0ad78;
+    background-color: #f0ad78;
+    color: white;
+}
+
+
+/* ============頁籤內容區塊============ */
+
+.tab_contents{
+    width: 100%;
+    max-width:1000px;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid #00a9b8; */
+
+}
+
+.tab_contents .tab{
+    padding: 10px;
+    display: none;
+    text-align: center;
+
+}
+.tab_contents .tab.-on{
+    display: block;
+    white-space: nowrap;
+    overflow: scroll;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+/* .tab1{
+}
+.tab2{
+    border: 2px solid #f0ad78;
+} */
+
+
+/* ========老師照片 內文========= */
+a.teacherCourse {
+    display: inline-block;
+    background-color: #a0d7dc;
+    margin: 10px 5px;
+    /* margin-left: calc((100% - var(--itemWidth) * var(--n)) / (var(--n) + 1)); */
+    border-radius: 5px;
+    width: 150px;
+    height: 195px;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+a.teacherCourse > span{
+    display: inline-block;
+    /* background-color: rgba(7, 56, 71, 0.5); */
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+}
+
+.course1{
+    background-color: rgba(15, 133, 235, 0.5);
+}
+
+.course2{
+    background-color: rgba(54, 213, 184, 0.5);
+}
+.course3{
+    background-color: rgba(226, 150, 241, 0.5);
+}
+.course4{
+    background-color: rgba(225, 140, 115, 0.653);
+}
+
+
+a.teacherCourse > img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+a.teacherCourse.juer{
+    background-color: #f9c6a0;
+}
+
+.pic.text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, .3);
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+    transform: translateY(100%);
+    transition: transform .5s; 
+}
+
+a.teacherCourse:hover .pic.text{
+    transform: translateY(0%);
+}
+
+
+
+
+
+/* -----加入我們------- */
+
+.joinus{
+    background-image: url("../images/teacher/joinus_02_1200.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    background-origin: border-box;
+    margin-bottom: 50px;
+}
+.joinus h2, .joinus h4{
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.joinus_block{
+    padding: 20px;
+    background-color: #62a7b8c2;
+}
+/* end */
+
+
+
+
+
+
+/* ============RWD============= */
+
+
+@media screen and (max-width: 1199px)and (min-width: 992px){
+    .bn{
+        padding-top: 10px;
+    }
+/* ========老師介紹  高中======= */
+
+    .teacher_tab{
+        width: 100%;
+    }
+    .tab_contents{
+        width: 100%;
+    }
+    .tab{
+        width: 100%;
+    }
+
+
+
+}
+@media screen and (max-width: 991px)and (min-width: 768px){
+    .bn{
+        padding-top: 10px;
+    }
+    .bn_text h1{
+        text-align: center;
+        margin: 5px 0 0 0;
+
+    }
+
+/* ----老師介紹 細節---- */
+    .introduce.text{
+        margin-top: 15px;
+
+    }
+/* ======最新開課資訊====== */
+
+    .newCourse{
+        width: 100%;
+    }
+
+/* =====學員推薦===== */
+
+    .studentad{
+        width: 100%;
+    }
+
+
+
+/* ========老師介紹======= */
+
+    .teacher_tab{
+        width: 100%;
+    }
+    .tab_contents{
+        width: 100%;
+    }
+    .tab{
+        width: 100%;
+    }
+}   
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+
+    .bn{
+        padding-top: 0px;
+    }
+
+    .bn_text h3{
+        font-size: 18px;
+        left: 55%;
+    }
+
+/* ========老師細節介紹======= */
+
+    .introduce_main{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        background-image: linear-gradient(to bottom right, white 50%, #00a9b8 50%, #00a9b8 100%);
+    }
+
+
+    .introduce.pic{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .introduce.pic >img:first-child{
+        display: none;
+    }
+    .introduce.pic >img:last-child{
+        display: block;
+        text-align: center;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .introduce.text{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+
+
+
+/* ======最新開課資訊====== */
+
+    .newCourse{
+        width: 100%;
+    }
+
+/* =====學員推薦===== */
+
+    .studentad{
+        width: 100%;
+    }
+
+
+
+
+
+
+/* ========老師介紹======= */
+
+    .teacher_tab{
+        width: 100%;
+    }
+    .tab_contents{
+        width: 100%;
+    }
+    .tab{
+        width: 100%;
+    }
+/* ==頁籤內容區塊== */
+
+    .tab_contents{
+        display: inline-block;
+
+    }
+    .tab_contents .tab{
+        padding: 0;
+    }
+
+
+/* ==老師照片 內文== */
+
+
+    a.teacherCourse > span{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    .pic.text{
+        transform:none;
+        font-size: 16px;
+    }
+
+/* ======加入我們====== */
+
+    .joinus{
+        background-image: url("../images/teacher/joinus_01_500.jpg");
+    }
+    .joinus h2, .joinus h4{
+        margin: 0px auto;
+    }
+    .joinus h2{
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 575px){
+
+    section{
+        margin: 10px 0;
+    }
+
+/* --------麵包屑-------- */
+
+    .breadcrumb{
+        margin: 10px auto;
+        padding: 2px 5px;
+
+
+    }
+    .breadcrumb .breadcrumb_list > li::before{
+        content: "/";
+        font-size: 14px;
+    }
+    .breadcrumb .breadcrumb_list > li > a{
+        font-size: 14px;
+
+    }
+
+/* ========老師細節介紹======= */
+    /* .introduction{
+        margin-top: 0;
+    } */
+
+    .introduction >h2{
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 20px;
+        background: #e4e3e287;
+        border: 0;
+        border-left: solid 10px #00a9b8; 
+    }
+    .introduce.block{
+        margin: 0 auto;
+        width: 100%;
+    
+    }
+    .introduce_main{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        background-image: linear-gradient(to bottom right, white 50%, #00a9b8 50%, #00a9b8 100%);
+    }
+
+    .introduce.pic{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .introduce.pic >img:first-child{
+        display: none;
+    }
+    .introduce.pic >img:last-child{
+        display: block;
+        text-align: center;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .introduce.text{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .introduce.text h2{
+        font-size: 30px;
+    }
+    .introduce.text h2 a{
+        font-size: 16px;
+        text-decoration: underline;
+    
+    }
+
+    .introduce.text > a{
+        padding-right: 20px;
+        text-decoration: underline;
+
+
+    }
+    .introduce.text > a::after{
+        right: 5px;
+    }
+    .good li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .good li > a{
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+
+/* =====學員推薦===== */
+
+    .studentad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .studentad > h2{
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 20px;
+        background: #e4e3e287;
+        border: 0;
+        border-left: solid 10px #00a9b8; 
+    }
+
+
+    .studlock{
+        display: none;
+    }
+
+    .studlock_B{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: left;
+        align-content: center;
+    }
+
+
+    .stud_block{
+        width: 100%; 
+        margin: 20px 10PX;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .studpic{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .studtext{
+        align-self: center;
+    }
+
+    .studtext h3 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px; 
+    }
+
+    .studtext_freecourse{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+    }
+    .studtext_freecourse h5{
+        text-align: left;
+        margin-bottom: 10px;
+
+    }
+
+    .studtext_freecourse p{
+        width: 100%;
+    }
+    .stud_block >a{
+        text-decoration: underline;
+        font-size: 16px;
+        text-align: left;
+        position: relative;
+        color: #00a9b8;
+    }
+    .studtext_freecourse::before{
+        display: none;
+    }
+    .stud_block >a::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        bottom: 4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9px 0 5px 9px;
+        border-color: transparent transparent transparent #f0ad78;
+    }
+
+    .stud_block >a:hover{
+        color: #f0ad78;
+    }
+
+/* ======最新開課資訊====== */
+
+    .newCourse{
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+
+    .newCourse h2{
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 20px;
+        background: #e4e3e287;
+        border: 0;
+        border-left: solid 10px #00a9b8; 
+    }
+
+    .blocks.course{
+        margin: 10px auto;
+    }
+
+    .news_pg{
+        /* width: 200px; */
+        width: 40%;
+        margin: 5px 10px;
+    }
+
+
+
+
+/* ========老師介紹======= */
+    .teacher_tab{
+        padding-bottom: 20px;
+    }
+
+    .tab_list_block{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 10px auto;
+        padding: 0;
+    }
+    .tab_list_block h2{
+        text-align: left;
+        padding: 5px 20px;
+        background: #e4e3e287;
+        border-left: solid 10px #00a9b8;  
+    }
+
+    ul.tab_list{
+        padding: 0px 5px;
+    }
+
+    ul.tab_list > li{
+        display: inline-block;
+        padding: 0px 5px;
+    }
+
+
+    ul.tab_list > li > a{
+        font-size: 16px;
+        padding: 5px 10px;
+
+    }
+
+/* ==老師照片 內文== */
+
+    a.teacherCourse > span{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    .pic.text{
+        transform:none;
+        font-size: 16px;
+    }
+
+
+
+
+
+/* -----加入我們------- */
+
+    .joinus{
+        background-image: url("../images/teacher/joinus_01_500.jpg");
+        background-position: bottom center;
+        margin-bottom: 0px;
+    }
+    .joinus h2, .joinus h4{
+        margin: 0px auto;
+    }
+    .joinus h2{
+        margin-bottom: 5px;
+    }
+    .joinus_block{
+        padding: 20px 0;
+    }
+    .bt.join a button{
+        margin-bottom: 10px;
+    }
+}
+
+

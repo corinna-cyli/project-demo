@@ -1,0 +1,779 @@
+@import"./common/all.css";
+@import"./common/header.css";
+@import"./common/footer.css";
+@import"./course.css";
+
+:root{
+    --header-height: 69px;
+    --aside-width: 180px
+}
+
+a.-on {
+    border-bottom: 0px;
+}
+a.--on{
+    border-bottom: 3px solid #003338
+} 
+
+.bn{
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    margin-top: 62px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* position: relative; */
+    max-width: 1200px;
+    background-image: url("../images/course/course_bn_1200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+
+.bn h2{
+    /* position: absolute; */
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 10px 30px;
+    /* left: 50%; */
+    /* margin: 25% auto; */
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
+
+}
+
+
+/* =============麵包屑================= */
+
+.breadcrumb{
+    padding: 5px 10px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+
+}
+.breadcrumb .breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.breadcrumb .breadcrumb_list > li{
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.breadcrumb .breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: #aaa;
+    margin-right: 12px;
+}
+
+.breadcrumb .breadcrumb_list > li:first-child::before{
+    content: "";
+    margin-right: 0;
+}
+  
+  
+.breadcrumb .breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #003338;
+    font-size: 18px;
+
+}
+  
+.breadcrumb .breadcrumb_list > li > a:hover{
+    color: #00a9b8;
+}
+
+
+/*============aside & main================*/
+.aside_main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*============aside 區域================*/
+.aside{
+    /* border: 1px solid blue; */
+    background-color: lightgray;
+    width: var(--aside-width);
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+
+}
+
+/* .aside_list{
+} */
+.aside_list h2{
+    font-size: 20px;
+    color: #003338;
+    background-color: #00a9b8;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    color: white;
+}
+
+
+.aside_list ul li{
+    background-color: #bfe3e7;
+    border-bottom: 1px solid rgb(199, 192, 192);
+
+}
+.aside_list ul li:hover{
+    background-color: #59bec6;
+
+}
+.aside_list ul li a{
+    display: block;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+    color: #003338;
+    cursor: pointer;
+}
+
+.aside_list ul li a.-on{
+    background-color: #59bec6;  
+}
+
+/*============main 區域================*/
+.main{
+    /* background-color: #ddd; */
+    width: calc(100% - var(--aside-width) - 30px);
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+  }
+
+
+/* ================課別類型================= */
+
+section{
+    width: 100%;
+}
+
+.course.height{
+    width: 98%;
+    margin: 0 auto;
+    
+}
+
+
+/* 各類課別類型 */
+.tab_list_block{
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+
+/* 各類課別類型 */
+.tab_list_bn{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid #00a9b8; */
+    font-size: 30px;
+    text-align: center;
+    padding: 18px 0;
+    background-color: #00a9b8;
+    /* background-image: url("../images/course/course_bn_1200.png"); */
+    /* background-repeat: no-repeat; */
+}
+
+.tab_list{
+    width: 100%;
+    display: none;
+}
+
+.tab_list li{
+    display: inline-block;
+    /* border: 1px solid #00a9b8; */
+    margin: 0 20px;
+    padding:0;
+}
+.tab_list li:first-child{
+    margin-left: 0;
+}
+
+.tab_list li a{
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 40px 0px;
+    width: 120px;
+    text-align: center;
+    background-color: #bfe3e7;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+
+
+}
+.tab_list li a:hover{
+    background-color: #59bec6;
+    box-shadow:none
+
+}
+.tab_list li a.-on{
+    background-color: #59bec6;
+    color: white;
+    box-shadow:none;
+    border: 2px solid white;
+    
+}
+
+
+/* =======課別類型>年級====== */
+
+.tab_list_main{
+    /* border: 1px solid #00a9b8; */
+    /* border-bottom: 0px; */
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.minutiae{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+/* 年級 */
+.grade.grade_block{
+    /* border: 1px solid green; */
+    background-color: #bfe3e7;
+
+
+}
+.grade_block_list{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.grade_block_list li{
+    display: inline-block;
+    /* border-right: 1px solid green; */
+}
+
+.grade_block_list li a{
+    display: inline-block;
+    font-size: 18px;
+    width: 100px;
+    padding: 15px 0px;
+    text-align: center;
+}
+.grade_block_list li a:hover{
+    background-color: #59bec6;
+}
+.grade_block_list li a.-on{
+    background-color: #59bec6;
+    color:white;
+}
+/* .grade_block_list li a.-show{
+    background-color: #59bec6;
+
+} */
+/* ====課別類型>年級>開課種類==== */
+
+.grade.grade_main{
+    /* border: 1px solid #00a9b8; */
+}
+
+.principles_up{
+    /* border: 2px solid purple; */
+    display: block;
+    width: 100%;
+    position: relative;
+    min-height: 92px;
+}
+
+/* 開課種類 */
+.kind{
+    width: 100%;
+    position: inherit;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.kind.-show{
+    /* border-bottom: 1px solid #00a9b8; */
+    display: block;
+    border: 1px solid #bfe3e7;
+    height: 100%;
+    padding-bottom: 20px;
+    /* min-height: 116px; */
+}
+
+
+.principles_list{
+    display: block;
+    /* border: 1px solid green; */
+    margin:  20px 30px;
+    
+}
+
+.principles_list li{
+    /* border: 1px solid green; */   
+    min-width: 100px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.principles_list li button{
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    border: 0px;
+    background-color: transparent;
+}
+
+.principles_list li button.-taget{
+    background-color: #59bec6;
+    /* color: #00a9b8; */
+    border-radius: 5px;
+    color:white;
+
+}
+
+.principles_list li button.-taget:hover{
+    color:white;
+
+}
+.principles_list li button:focus{
+    outline:none;
+    color:white;
+}
+.principles_list li button:hover{
+    color: #00a9b8;
+}
+
+
+
+
+/* ====課別類型>年級>開課種類>課程大綱====== */
+/* 各個課程大綱外誆 */
+.principles_bottom{
+    /* border: 1px solid purple; */
+    display: block;
+    width: 100%;
+    position: relative;
+    /* border-bottom: 1px solid #00a9b8; */
+
+}
+
+/* 開合設定 */
+.sort{
+    width: 100%;
+    position: inherit;
+    left: 0;
+    top: 0;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.sort.-down{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #bfe3e7;
+    border-top: none;
+}
+
+/* 課程大綱 */
+.principles_main{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    padding-left: 20px;
+    /* border: 1px solid purple; */
+
+}
+.principles_main h3{
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #00a9b8;
+}
+
+
+.principles_main ul{
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid purple; */
+    margin:  10px 30px;
+    line-height: 30px;
+}
+.principles_main ul li{
+    font-size: 16px;
+    vertical-align: top;
+
+}
+/* 授課老師 */
+.principles_teahcer{
+    border-left: 1px solid #bfe3e7;
+    display: inline-block;
+    width: 30%;
+    /* height: 200px; */
+    text-align: center;
+}
+
+.principles_teahcer h3{
+    display: block;
+    color: white;
+    background-color: #00a9b8;
+    padding: 10px 0;
+    
+}
+.principles_teahcer img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+    /* border: 1px solid #00a9b8; */
+    background-color: #00a9b8;
+    width: 100px;
+
+}
+/* 共用國中老師背景顏色 */
+.principles_bottom.juer .principles_teahcer img{
+    background-color: #f0ad78;
+
+}
+
+.principles_teahcer a{
+    font-size: 18px;
+    display: block;
+    padding: 5px 0;
+    text-decoration: underline;
+
+}
+
+.principles_teahcer a:hover{
+    color: #f0ad78;
+
+}
+
+
+
+/* =======================RWD==================== */
+
+@media screen and (max-width: 1199px)and (min-width: 992px){
+       /* ====課別類型>年級>開課種類>課程大綱====== */
+
+    .principles_main ul{
+        margin:  0px 10px;
+    }
+ 
+    /* 授課老師 */
+    .principles_teahcer{
+        background-color: #bfe3e7;
+    }
+
+
+}
+
+@media screen and (max-width: 991px)and (min-width: 768px){
+
+
+/* ====課別類型>年級>開課種類>課程大綱====== */
+
+    .principles_main ul{
+        margin:  0px 5px;
+    }
+
+    /* 授課老師 */
+    .principles_teahcer{
+        background-color: #bfe3e7;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+    /*============aside 區域================*/
+
+    .aside{
+        display: none;
+    }
+    /*============main 區域================*/
+
+    .main{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+
+/* ================課別類型================= */
+    .tab_list_bn{
+        display: none;
+    }
+    /* 各類課別類型 */
+    .tab_list{
+        margin: 0 auto;
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        align-content: center;
+        /* padding: 0 2px; */
+    }
+
+    .tab_list li{
+        /* border: 1px solid red; */
+        /* margin: 5px auto; */
+        width: 40%;
+        height: 45px;
+        margin: 5px 0;
+
+    }
+
+
+    .tab_list li a.-on{
+        /* border: none; */
+
+    }
+
+/* =======課別類型>年級====== */
+
+    .tab_list_main{
+        margin-top: 5px;
+
+    }
+
+    /* 各類課別類型 */
+    .tab_list{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .tab_list li{
+        /* border: 1px solid red; */
+        margin: 5px auto;
+        width: 49%;
+        height: 45px;
+        margin: 10px auto;
+        vertical-align: top;
+
+    }
+    .tab_list li:nth-child(2n){
+        margin-left: 2%;
+    }
+
+    .tab_list li a{
+        /* padding: 5px 15px; */
+        display: inline-block;
+        align-content: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .tab_list > li:last-child{
+        width: 100%;
+        flex-grow: none;
+    }
+
+    .tab_list li a.-on{
+        border: none;
+
+    }
+
+    /* !!!!! 共用css國中課程 特殊項目 */
+    .tab_list > li.getBig{
+        width: 48%;
+        /* display: inline-block; */
+    }
+
+
+    /* ====課別類型>年級>開課種類>課程大綱====== */
+
+    .principles_main ul{
+        margin:  0px 5px;
+    }
+ 
+    /* 授課老師 */
+    .principles_teahcer{
+        background-color: #bfe3e7;
+    }
+}
+
+
+
+@media screen and (max-width: 575px){
+
+    .bn{
+        height: 100px;
+    }
+
+    .bn h2{
+        width: 150px;
+    }
+
+    /* --------麵包屑-------- */
+
+    .breadcrumb{
+        margin: 10px auto;
+        padding: 2px 2%;
+    }
+    .breadcrumb .breadcrumb_list > li::before{
+        content: "/";
+        font-size: 12px;
+    }
+    .breadcrumb .breadcrumb_list > li > a{
+        font-size: 12px;
+
+    }
+
+    /*============aside 區域================*/
+
+    .aside{
+        display: none;
+    }
+
+    /*============main 區域================*/
+
+
+    .main{
+        width: 100%;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    /* ================課別類型================= */
+    .course.height{
+        padding: 0 2px;
+        width: 98%;
+    }
+
+    .tab_list_bn{
+        display: none;
+    }
+    /* 各類課別類型 */
+    .tab_list{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        align-content: center;
+        /* padding: 0 2px; */
+    }
+
+    .tab_list li{
+        /* border: 1px solid red; */
+        /* margin: 5px auto; */
+        width: 49%;
+        height: 45px;
+        margin: 5px 0;
+    }
+    .tab_list li:nth-child(2n){
+        margin-left: 2%;
+    }
+    .tab_list li a{
+        /* padding: 5px 15px; */
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        padding: 10px 0;
+        width: 100%;
+        font-size: 16px;
+        vertical-align: top;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .tab_list > li:last-child{
+        font-size: 14px;
+        height: 45px;
+        flex-grow: 1;
+    }
+
+    .tab_list li a.-on{
+        border: none;
+
+    }
+
+
+    /* =======課別類型>年級====== */
+
+    .tab_list_main{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .grade_block_list li a{
+        padding: 5px 0px;
+        font-size: 14px;
+        width: 80px;
+    }
+
+    /* ====課別類型>年級>開課種類==== */
+    .kind{
+        padding: 10px 0;
+    }
+    .principles_list{
+        margin: 0px;
+
+    }
+
+    /* 開課種類 */
+    .principles_list li button{
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 5px;
+
+    }
+    .principles_list li button.-taget{
+        border-radius: 0;
+    }
+
+    /* ====課別類型>年級>開課種類>課程大綱====== */
+
+    .principles_main{
+        width: 65%;
+        padding-left: 10px;
+    }
+
+
+    .principles_main ul{
+        /* display: block; */
+        margin:  0px 5px;
+        line-height: 25px;
+    }
+    .principles_main ul li{
+        font-size: 12px;
+        padding: 0;
+    }
+    /* 授課老師 */
+    .principles_teahcer{
+        background-color: #bfe3e7;
+        width: 35%;
+    }
+
+
+}

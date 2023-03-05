@@ -1,0 +1,1316 @@
+@import"./common/all.css";
+@import"./common/header.css";
+@import"./common/footer.css";
+
+
+body{
+    background-color: #e4e3e287;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+
+/* 首頁導覽列與其他頁面不同 */
+
+.nav{
+    justify-content: space-between;
+
+}
+ul.nav_bar {
+    margin: 0;
+}
+
+/* ==========banner========== */
+.bn{
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+    text-align: center;
+    /* background-image: url("../images/banner/banner_bg_1100x400-2.png");
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: 95% 400px; */
+    /* background-size: 95%; */
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.bn:before{
+    content: "";
+    display: block;
+    width: 95%;
+    height: 65%;
+    border-radius: 10px;
+    position: absolute;
+    right: 2.5%;
+    top: 10%;
+    background: #00a9b8;
+    z-index: -1;
+}
+
+
+
+.bn_child{
+    /* border: 1px solid blue; */
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    /* max-height: 700; */
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+
+} 
+
+.bn_child_img{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 10%;
+    /* border: 1px solid blue; */
+    /* position: relative; */
+}
+.bn_child_img img:first-child{
+    display: inline-block;
+    vertical-align: top;
+    /* margin: 15% 0 220px 10%;  */
+    /* border: 1px solid green; */
+    max-width: 60% !important;
+    width: 500px;
+    z-index: 10;
+
+}
+.bn_child_img img:nth-child(2){
+    display: inline-block;
+    /* border: 1px solid red;   */
+    /* width: 400px; */
+    max-width: 450px !important;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    filter:drop-shadow(0px 0px 10px rgba(206, 206, 205, 0.858));
+}
+
+
+.bn_child_img img:nth-child(3){
+    display: none;
+
+}
+/* =========倒數=========== */
+
+.countdown{
+    width: 55%;
+    /* text-align: left; */
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    transform: translate(10%,-30%);
+    /* border: 1px solid black; */
+
+}
+.countdown_block{
+    background-color: #edf5f3;
+    border-radius: 3px;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown_night, 
+.countdown_twelve01, 
+.countdown_twelve02{
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    color: #e37756;
+    display: inline-block;
+    vertical-align: bottom;
+    font-weight: bolder;
+}
+
+.countdown_block span{
+    margin: 0 5px;
+}
+
+.countdown_B{
+    display: none;
+}
+
+
+/* =======內文======= */
+.main{
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    /* width: 1200px; */
+    background-color: white;
+}
+
+
+section{
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: 100px auto;
+    display: block;
+    text-align: center;
+}
+
+
+
+/* =======最新消息======= */ 
+
+.news h3{
+    border-left: 2px solid #e37756;
+    border-right: 2px solid #e37756;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto;
+    color: #113538; 
+}
+.news_a_pg{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+}
+.news_pg{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    width: 20%;
+    /* border: 1px solid blue; */
+    position:relative;
+    overflow:hidden;
+    cursor:pointer; /*游標 */
+}
+
+.news_pg img{
+    border-radius: 10px;
+    width: 100%;
+    /* left: 0; */
+    /* top: 0; */
+}
+
+.news_pg_mask{
+    position:absolute;
+    top: 0;
+    left: 0;
+    text-align:center;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+
+}
+
+.news_pg_mask h5{
+    margin:0; 
+    position:absolute;
+    transform:translatey(-100%);
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(36, 34, 34, 0.7);
+    color: white;
+    transition: all .3s ease-in-out;
+    /* opacity: 0; */
+
+}
+
+.news_pg:hover .news_pg_mask{
+    opacity: 1;
+}
+.news_pg:hover .news_pg_mask h5{
+    opacity: 1;
+    transform:translatey(0%);
+
+}
+
+
+
+/* =======老師廣告======= */
+.ad_block{
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    display: inline-block;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.ad.text{
+    display: inline-block;
+    /* border: 1px solid green; */
+    width: 50%;
+    max-width: 80%;
+    line-height: 60px;
+    margin-top: 40px;
+    vertical-align: bottom;
+}
+
+.ad.text h1{
+    margin: 20px auto; 
+    color: #e37756;
+}
+.ad.img{
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: 40%;
+    /* height: 200px;*/
+    z-index: 1;
+    position: relative;
+}
+
+
+.ad.img::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 90%;
+    border-radius: 90% 0 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: #00a9b8;
+    z-index: -1;
+}
+
+
+.ad.img img{
+    width: 70%;
+    /* height: 400px; */
+    z-index: 1;
+
+}
+
+/* =======-專業課程資訊======= */
+.course_box{
+    /* border: 1px solid green; */
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    perspective: 800px;  /*透視 */
+    -webkit-perspective:800px;
+    -moz-perspective:800px;
+    -ms-perspective:800px;
+    -o-perspective:800px;
+}
+
+.course_block_card{
+    display: inline-block;
+    width: calc((100% - 20px)/ 3);
+    height: 200px;
+    max-height: 100%;
+    margin-left: 5px;        
+    border-radius: 5px;
+    /* overflow: hidden; */
+    position: relative;
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transform-origin: center center;
+
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    /* box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8); */
+
+}
+
+.course_block_card:first-child{
+    margin-left: 0px;
+}
+
+.course_block_card.flipped {
+    transform: rotateX(-180deg);
+    -webkit-transform:rotateX(-180deg);
+    -moz-transform:rotateX(-180deg);
+    -ms-transform:rotateX(-180deg);
+    -o-transform:rotateX(-180deg);
+    border: 0;
+}
+
+.course_block{
+    /* border: 3px solid #00a9b8; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+}
+/* 課程 正面 */
+.course_block.front{
+    background-image: url("../images//course/course_pg_op_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* 課程 背面 */
+.course_block.back{
+    background-image: url("../images/course/course_pg_op-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateX(-180deg);
+    -webkit-transform:rotateX(-180deg);
+    -moz-transform:rotateX(-180deg);
+    -ms-transform:rotateX(-180deg);
+    -o-transform:rotateX(-180deg);
+}
+/* 課程 正面 */
+.course_block.front h2{
+    font-weight: bolder;
+    padding: 15% 0;
+}
+
+.course_block.front:hover{
+    border: 3px solid #00a9b8;
+}
+/* .course_block.front:hover h2{
+    filter:drop-shadow(5px 5px 7px #00a9b8);  
+} */
+
+/* 課程 背面 */
+.first_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 40% 0;
+    margin: 0 30px;
+    text-decoration: underline;
+
+}
+.first_list a{
+    /* display: block; */
+    text-align: center;
+    padding: 15% 5px;
+    font-size: 24px;
+    font-weight: bolder;
+    /* border: 1px solid black; */
+}
+
+.first_list a:hover{
+    color: #007a85;
+}
+
+
+
+/* =======老師介紹=======*/
+
+.teacher h1{
+    text-align: left;
+    padding-left: 30px;
+}
+.teacher_block{
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.teacher.pic.box{
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    margin: 0px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    overflow: hidden;
+
+}
+
+.teacher.pic_block{
+    /* border: 1px solid #00a9b8; */
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 30%;
+    position: relative;
+}
+
+.teacher.pic_block img{
+    /* border: 1px solid blue; */
+    background-color: #00a9b8;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.teacher.pic.name{
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.teacher.pic.name h2{
+    font-size: 20px;
+    padding: 45% 0;
+}
+
+
+
+.teacher.pic_block a:hover .teacher.pic.name{
+    opacity: 1;
+
+}
+.teacher.text{
+    /* border: 1px solid orange; */
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;    
+    position: relative;
+    z-index: 2;
+    text-align: left;
+
+}
+.teacher.text::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 100px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: #00a9b8;
+    z-index: -1;
+    
+}
+.hgroup{
+    /* border: 1px solid black; */
+    padding: 20px 0;
+    text-align: left;
+
+}
+.hgroup.teacher h3{
+    margin: 0;
+    text-align: left;
+    width: 80%;
+    line-height: 50px;
+}
+
+.hgroup.teacher p{
+    /* border: 1px solid black; */
+    padding: 10px 0;
+    text-align: left;
+    width: 90%;
+}
+
+.bt.teacher{
+    /* border: 1px solid orange; */
+    text-align: left;
+    padding-top: 20%;
+}
+
+
+/* =======線上課程======= */
+
+.onlineAd h1{
+    text-align: right;
+}
+
+.online_block{
+    /* border: 1px solid green; */
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.online.text{
+    /* border: 1px solid orange; */
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding-top: 1%;
+    margin-right: 0px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.online.text::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 0 0;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    background: #f0ad78;
+    z-index: -1;
+}
+
+.hgroup_online{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.hgroup_online h3{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hgroup_text_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+.hgroup_text{
+    /* border: 1px solid #00a9b8; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hgroup_text p{
+    /* border: 1px solid orange; */
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    /* text-decoration: underline; */
+    width: 100%;
+    font-size: 16px;
+}
+
+.hgroup_text img{
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+
+.online.pic{
+    /* border: 1px solid orange; */
+    display: inline-block;
+    width: 55%;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+
+}
+
+.online.pic img{
+    border-radius: 10px;
+    display: inline-block;
+    width: 95%;
+    position: relative;
+}
+.online.pic::after{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 90%;
+    border-radius: 90% 0 0;
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+    background: #f0ad78;
+    z-index: -1;
+}
+
+.bt.online{
+    /* border: 1px solid orange; */
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* =======關於我們======= */
+.place_block{
+    width: 100%;
+}
+.place.text h3{
+    margin: 10px auto;
+    color: #003338;
+
+}
+.place.pic{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.room_block{
+    /* border: 1px solid #00a9b8; */
+    background-color: #edf5f3;
+    border-radius: 5px;
+    width: 33%;
+    margin: 2% 1%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.room_block img{
+    width: 100%;
+}
+
+.room{
+    /* border: 1px solid #003338; */
+    display: block;
+    padding: 10px 0;
+    min-height: 50px;
+
+}
+.room h3{
+    color: #00a9b8;
+}
+.room h4{
+    font-size: 18px;
+}
+
+.room a span{
+    border-bottom: 1px solid #00a9b8;
+    display: none;
+    font-weight: normal;
+    font-size: 14px;
+    color: #007a85;
+    margin: 10px 5px;
+    text-align: center;
+    /* text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2); */
+}
+.room a span:hover{
+    color: #f0ad78;
+}
+
+/* =======聯繫我們======= */
+.contact.text{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact.text ul li input{
+    font-size: 14px;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px auto;
+
+}
+
+.contact.text h3{
+    /* border:1px solid red; */
+    line-height: 50px;
+    color:#003338;
+    position: relative;
+    z-index: 2;
+}
+
+.contact.text h3::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 0 50px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #00a9b8;
+    z-index: -1;
+}
+
+.bt.contact{
+    margin: 20px;
+    position: relative;
+}
+.bt.contact::before{
+    content: "";
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius:  50px 0 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    background: #00a9b8;
+    z-index: 1;
+}
+
+
+
+/* ======座右銘======= */
+.motto{
+    /* border:1px solid red; */
+    background-image: url("../images/contact/motto_1200x400.png");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin: 0;
+
+}
+
+.motto_block{
+    /* border:1px solid blue; */
+    /* position: relative; */
+    background: hsla(0,0%, 100%, .5);
+    width: 80%;
+    padding-top:5%;
+    padding-bottom:5%;
+    overflow:hidden;
+    border-radius: 15px;
+    margin: 5% auto;
+    /* top:100px; */
+    
+}
+
+.motto_block h2{
+    color: #003338;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* ================rwd=================== */
+
+
+
+@media screen and (max-width: 1439px) and (min-width: 1200px){
+    /* ==========banner========== */
+    .bn_child img:nth-child(2){
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1199px)and (min-width: 576px){
+
+    /* =======內文======= */
+    
+    section{
+        width: 100%;
+    }
+
+    /* ==========banner========== */
+    .bn_child img:nth-child(2){
+        width: 35%;
+        right: 5%;
+    }
+}
+@media screen and (max-width: 1199px)and (min-width: 992px){
+    /* ==========banner========== */
+    /* .bn_child img:nth-child(2){
+        width: 35%;
+        right: 5%;
+    } */
+    /* =========倒數=========== */
+    .countdown_block{
+        width: 30%;
+    }
+    /* =======老師廣告======= */
+
+
+    /* =======老師介紹=======*/
+
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    /* ==========banner========== */
+    /* .bn_child img:nth-child(2){
+        width: 35%;
+        right: 5%;
+    } */
+
+    .bn:before{
+        height: 65%;
+    }
+    /* =========倒數=========== */
+    .countdown_block{
+        width: 30%;
+        max-height: 120px;
+    }
+    /* =======老師廣告======= */
+    .ad_block{
+        width: 95%;
+    }
+
+    /* =======老師介紹=======*/
+
+    .teacher.pic.box{
+        /* border: 1px solid black; */
+        width: 50%;
+    }
+    .teacher.pic_block{
+        width: 45%;
+        margin: 2px 5px;
+    }
+
+    /* 線上課程 */
+    .hgroup_online h3{
+        font-size: 24px;
+    }
+    .online.text{
+        /* border: 1px solid orange; */   
+    }
+
+    .hgroup_text p{
+        line-height: 20px;
+        /* text-decoration: underline; */
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+    
+    /* ==========banner========== */
+    .bn:before{
+        height: 65%;
+    }
+
+    /* =========倒數=========== */
+    .countdown_block{
+        width: 30%;
+        max-height: 100px;
+    }
+
+    .countdown_block h5{
+        font-size: 15px;
+    }
+    .countdown_night, 
+    .countdown_twelve01, 
+    .countdown_twelve02{
+        font-size: 16px;
+        line-height: 14px;
+        padding: 0;
+    }
+    /* =======最新消息======= */ 
+    .news_pg{
+        width: 35%;
+        margin: 10px;
+    }
+
+    .news_pg:hover .news_pg_mask h5{
+        transform:translateY(120%);
+    }
+    /* =======老師廣告======= */
+    .ad.text{
+        width: 100%;
+        border-top: 2px solid #00a9b8;
+        border-bottom: 2px solid #00a9b8;
+    }
+
+    .ad.text h1{
+        margin: 0;
+    }
+    .ad.text h3{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .ad.img{
+        display: none;
+        /* width: 70%; */
+    }
+
+    /* =======-專業課程資訊======= */
+    .course_block_card{
+        max-height: 150px;
+    }
+    .course_block_card:first-child .course_block.back{
+        padding: 10% 0;
+    }
+    .course_block.back a{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .first_list{
+        margin: 0 15px;
+    }
+
+
+    /* =======老師介紹=======*/
+    .teacher h1{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .teacher.pic.box{
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+    .teacher.pic_block{
+        width: 30%;
+        margin: 2px 5px;
+    }
+
+    .teacher.text{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .hgroup.teacher h3{
+        line-height: 30px;
+        padding: 0;
+    }
+    .bt.teacher{
+        text-align: right;
+        padding: 0;
+        padding-right: 10px;
+    }
+    
+    /* 線上課程 */
+    .onlineAd h1{
+        text-align: center;
+    }
+    .online_block{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .online{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .online.text{
+        width: 90%;
+        margin: 25px auto;
+        
+    }
+
+    .hgroup_online{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+
+    .online.pic{
+        width: 95%;
+    }
+
+
+    /* =======關於我們======= */
+    .place.pic{
+        width: 100%;
+        flex-direction: row;
+    }
+    .room_block{
+        width: 30%;
+        border-radius: 5px;
+    }
+    .room h4, .room h3{
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    /* ==========banner========== */
+    .bn:before{
+        height: 85%;
+    }
+    .bn_child{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .bn_child img:first-child{
+        vertical-align: top;
+        width:70%;
+        margin: 0;
+    }
+    .bn_child img:nth-child(2){
+        display: none;
+    }
+
+    .bn_child_img img:nth-child(3){
+        display: inline-block;
+        /* border: 1px solid red; */
+        max-width: 30% !important;
+        z-index: 10;
+        position: absolute;
+        bottom: 0px;
+        right: 5%;
+    }
+
+
+    /* =======內文======= */
+    section{
+        margin: 50px auto !important;
+        width: 100% !important;
+        /* border: 1px solid black; */
+    }
+    
+    h1{
+        border-left: 3px solid #00a9b8;
+        padding-left: 10px;
+        text-align: left;  
+    }
+
+    /* =========倒數=========== */
+
+    .countdown{
+        display: none;
+    }
+
+    .countdown_B{
+        width: 100%;
+        text-align: left;
+        margin: 0px auto 20px auto;
+        display: flex;
+        /* border: 1px solid black; */
+    }
+    .countdown_B_block{
+        background-color: #edf5f3;
+        border-radius: 3px;
+        box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.2);
+        /* border: 1px solid black; */
+        padding: 5px 0;
+        width: 30%;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .countdown_night, 
+    .countdown_twelve01, 
+    .countdown_twelve02{
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 20px;
+        width: 100%;
+        
+    }
+
+
+    /* =======最新消息======= */ 
+    .news_a_pg{
+        width: 100%;
+    }
+    .news_pg{
+        /* border: 1px solid black; */
+        width: 40%;
+        padding: 0;
+        margin: 5px;
+    }
+    .news_pg a :hover h5{
+        opacity: 1;
+    }
+    /* =======老師廣告======= */
+    .ad.text{
+        margin: 0 auto;
+        width: 100%;
+        line-height: 30px;
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid #00a9b8;
+        border-bottom: 2px solid #00a9b8;
+    }
+    .ad.text h1{
+        margin: 10px auto;
+        text-align: center;
+        border: 0;
+    }
+    .ad.text h3{
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .ad.img{
+        display: none;
+        width: 100%;
+    }
+    /* =======-專業課程資訊======= */
+    .course_box{
+        width: 90%;
+    }
+    .course_block_card{
+        max-height: 140px;
+
+    }
+    .course_block.back a{
+        /* /* display: block; */
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .first_list{
+        margin: 0 5px;
+    }
+
+
+    /* =======老師介紹=======*/
+    .teacher h1{
+        padding-left: 5px;
+
+    }
+    .teacher.pic.box{
+        /* border: 1px solid black; */
+        width: 90%;
+    }
+    .teacher.pic_block{
+        width: 30%;
+        margin: 2px 5px;
+    }
+
+    .teacher.text{
+        width: 90%;
+        margin-top: 20px;
+        /* border: 1px solid #00a9b8; */
+        border-radius: 5px;
+        text-align: left;
+
+    }
+    .teacher.text::after{
+        width: 50px;
+        height: 50px;
+        border-radius: 0 0 0 50px;
+    }
+    .hgroup.teacher p{
+        text-align: left;
+        
+    }
+    
+    .hgroup.teacher h3{
+        line-height: 30px;
+        padding: 0;
+    }
+    .bt.teacher{
+        text-align: right;
+        padding: 0;
+        padding-right: 10px;
+    }
+    
+    /* =======線上課程======= */
+
+    .onlineAd h1{
+        text-align: left;
+    }
+    .online_block{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .online.text{
+        width: 100%;
+        margin: 25px auto;
+    }
+    .hgroup.online h3{
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .online.pic{
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .online.pic::after{
+        right: -10px;
+        bottom: -20px;
+    }
+
+
+    /* =======關於我們======= */
+
+    .place.pic{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .room_block{
+        /* border: 1px solid red; */
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 90%;
+        background-color: #edf5f3;
+        margin: 10px auto;
+    }
+    .roomPic{
+        width: 55%;
+    }
+    .roomPic img{
+        width: 100%;
+    }
+
+    
+    .room{
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        min-width: 150px;
+
+    }
+    .room h4{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .room a span{
+        display: inline-block;
+        margin: 5px 5px 0 5px ;
+    }
+    .bt.place a button{
+        display: none;
+    }
+
+    /* =======聯繫我們======= */
+
+    .contact.text{
+        /* border: 1px solid #00a9b8; */
+        width: 90%;
+        margin: 0 auto;
+        min-width: 200px;
+    }
+    .contact.text ul li input{
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .contact.text h3::before{
+        left: 0px;
+        top: 0;
+    }
+
+    /* ======座右銘======= */
+
+    .motto{
+        margin: 0 !important;
+    }
+
+    .motto_block{
+        border-radius: 5px;
+    }
+
+
+}

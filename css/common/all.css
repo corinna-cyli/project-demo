@@ -1,0 +1,207 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+    font-family: "LiSung Light", "Noto Sans TC","helvetica", "STHeiti", "Apple LiGothic Medium", "Apple LiSung Light", "Microsoft JhengHei", "微軟正黑體", "BiauKai";
+    color: #003338;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+a.-on{
+    /* background-color: #bfe3e7; */
+    border-bottom: 3px solid #003338
+
+}
+
+img{
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+
+
+h1{
+    font-size: 50px;
+    margin: 20px;
+    color: #5a5e5e;
+    font-weight: normal;
+}
+h2{
+    font-size: 40px; 
+    font-weight: normal;
+
+}
+
+h3{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+    font-weight: normal;
+
+}
+
+h5{
+    font-size: 18px;
+
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+span{
+    font-size: 16px;
+}
+
+
+/* ========按鈕========== */
+button{
+    font-size: 20px;
+}
+.bt a button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: #00a9b8;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+    border: 0;
+}
+
+.bt a button:hover{
+    cursor: pointer;
+    /* border: 1px solid #bfe3e7; */
+    background-color: #bfe3e7;
+    color: #003338;
+    box-shadow: none;
+}
+
+/* 滑回最上層 */
+#go_top{
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    color: white;
+    background-color:#00a9b8;
+    border-radius: 50%;
+    border: solid;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1199px) and  (min-width: 768px){
+
+
+    h2{
+        font-size: 30px;
+
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+
+    h1{
+        font-size: 40px;
+    }
+    
+    h2{
+        font-size: 25px;
+
+    }
+    h3{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    h4{
+        font-size: 18px;
+        margin: 0;
+    }
+    h5{
+        font-size: 14;
+    }
+
+    p{
+        font-size: 16px;
+
+    }
+
+    span{
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 575px){
+
+    h1{
+        font-size: 30px;
+
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    h4{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    h5{
+        font-size: 12px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    button{
+        font-size: 16px;
+    }
+    .bt a button{
+        width: 100px;
+        height: 40px;
+        border-radius: 0px;
+        color: white;
+        /* border: 1px solid #00a9b8; */
+        box-shadow:none;
+        transition: transform .2s;
+        margin: 10PX 0;
+    }
+    span{
+        font-size: 12px;
+    }
+
+}

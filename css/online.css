@@ -1,0 +1,871 @@
+@import"./common/all.css";
+@import"./common/header.css";
+@import"./common/footer.css";
+
+body{
+    background-color: #e4e3e287;
+}
+
+.bn{
+    margin-top: 0 auto;
+    padding-top: 60px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.bn_text{
+    background-image: url("../images/online/online\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 10px 30px;
+
+}
+.bn h2{
+    /* position: absolute; */
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 10px 30px;
+    margin: 20% auto;
+}
+
+
+
+
+.ol_nav{
+    /* border: 1px solid black; */
+    background-color: #d2d3d3;
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+
+}
+.ol_bar{
+    /* border: 1px solid blue; */
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 1px;
+    margin: 0 auto;
+
+}
+.ol_bar li{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: 0 20px;
+}
+.ol_bar li a{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #003338;
+}
+.ol_bar li a:hover{
+    color: #e37756;
+}
+
+
+/* --------main-------- */
+
+.main{
+    /* border: 1px solid black; */
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    margin:0px auto;
+    background-color: white;
+}
+
+section{
+    /* border: 1px solid black; */
+    width: 100%;        
+    padding-top: 80px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+    /* border-bottom: 1px solid #0d636b; */
+
+}
+
+.online_title h2{
+    display: block;
+    max-width: 380px;
+    width: 60%;
+    background-color: white;
+    /* box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);   */
+    margin: 0px auto;
+    color: #00a9b8;
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow:8px 8px 2px rgba(253, 151, 83, 0.911),-8px -8px 2px rgba(37, 212, 212, 0.89);
+    /* background: -webkit-linear-gradient(top, #ffffff 60%,#f0ad78 60%); */
+}
+
+.online_title h3{
+    color : #003338;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+
+/* ==========三大優勢========= */
+
+/* ---三大特色--- */
+.threePoint{
+    display: block;
+    width: 100%;
+
+}
+
+.three_point{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.point{
+    /* border: 1px solid blue; */
+    width: 30%;
+    text-align: center;
+    
+}
+.point span{
+    border-left: 2px solid #f0ad78;
+    border-right: 2px solid #f0ad78;
+    font-size: 24px;
+    color: #00a9b8;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+
+}
+.card{
+    display: block;
+    /* border: 1px solid green; */
+    max-width: 200px;
+    margin: 20px auto;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);  
+
+} 
+.card img{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.other_notes{
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #f4f8f8a8;    
+    font-size: 16px;
+    color:#00a9b8;
+    padding: 30px 10px;
+    font-size: 30px;
+    text-align: center;
+    transform: translatex(100%);
+    transition: transform .2s;
+}
+.card:hover .other_notes{
+    transform: translateY(0%);
+}
+
+
+
+
+/* -------影片------ */
+.online_point.video{
+    /* border: 1px solid blue; */
+    /* display: block; */
+    margin: 20px auto;
+    text-align: center;
+    /* background-color: #bfe3e7; */
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+.online_point.video iframe{
+    box-shadow:-8px -8px 2px rgba(253, 151, 83, 0.911),8px 8px 2px rgba(37, 212, 212, 0.89);
+
+}
+
+/* ==========線上熱門課程========= */
+
+.hotCourse{
+    background-color: #f8ece4;
+
+}
+.onlinehot_group{
+    /* border: 1px solid orange; */
+    /* background: -webkit-linear-gradient(bottom, #ffffff 20%,#00a9b8 20%,#00a9b8 80%,#ffffff 80%); */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin: 30px auto;
+    padding: 0 5px;
+}
+.onlinehot{
+    /* border: 1px solid green; */
+    padding: 5px 0;
+}
+
+.onlinehot.big{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+
+.onlinehot.big a{
+    margin: 0 auto;
+
+}
+
+.onlinehot.little{
+    width: 50%;
+    display: inline-block;
+
+}
+.littleList{
+    display: inline-block;
+    width: 100%;
+}
+.littleList a{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    padding: 0 5px;
+}
+
+.hot_list{
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid gray; */
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3); 
+    margin: 0 auto;
+    text-align: center;
+}
+.littleList a .hot_list{
+    margin-bottom: 10px;
+}
+.big a .hot_list h3{
+    margin: 2.5px 0;
+}
+
+.little a:last-child .hot_list{
+    margin-top: 5px;
+}
+.hot_list span{
+    position: absolute;
+    background-color: #00a9b8;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+}
+
+
+.hot_list:hover h3{
+    /* background-color: #00a9b8; */
+    color: white;
+}
+.hot_list:hover{
+    background-color: #00a9b8;
+
+}
+.onlinehot img{
+    width: 100%;
+}
+
+.onlinehot h3{
+    font-size: 16px;
+    color: #003338;
+    text-align: center;
+    line-height: 20px;
+    padding: 10px 0px;
+}
+
+
+/* =====真心推薦 =======*/
+
+.studPush{
+    /* border: 1px solid gray; */
+
+}
+
+.push_list_block{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    width: 90%;
+    /* border: 1px solid gray; */
+
+}
+
+.student_list{
+    width: 50%;
+    margin: 0px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.student_list h3{
+    text-align: center;
+    background-color:#00a9b8;
+    color :#f8ece4;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-radius: 2px;
+
+}
+
+.studentpush{
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+    vertical-align: top;
+    padding: 20px 0;
+    /* border-radius: 10px; */
+    border: 5px dashed #00a9b8;
+
+}
+
+.studentpush::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/other/queen_50.png");
+    background-repeat: no-repeat;
+    top: -11px;
+    left: 10%;
+}
+
+.list_image{
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 25%;
+    vertical-align: top;
+
+
+}
+.list_image img{
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.list_more{
+    /* border: 1px solid red; */
+    display: inline-block;
+    max-width: 70%;
+    width: 70%;
+    text-align: left;
+    padding-top: 0;  
+}
+.list_more span{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.list_more span:last-child{
+    font-size: 12px;
+    text-align: right;
+    display: block;
+}
+
+.list_more span:last-child:hover{
+    color: #f0ad78;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.list_more p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+    width: 95%;
+    /* border: 1px solid red; */
+
+
+}
+
+
+
+/* -----名師在你家----- */
+.teachPush{
+    /* border: 1px solid red; */
+    background-color: #f8ece4;
+
+}
+
+.teacherpush_list{
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    width: 95%;
+    display: block;
+    background-color: white;
+}
+
+.teacherpush_list > span{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    display: block;
+}
+
+.teacherlist{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+/* 水平捲軸效果 */
+::-webkit-scrollbar{
+    width: 6px;
+    height: 7px;
+    background-color: #F5F5F5;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bfe3e7;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    
+}
+
+/* 老師選單內容 */
+.teacher{
+    width: 100%;
+    display: block;
+    margin: 0 10px ;
+}
+.teacher a{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #003338;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 5px;
+    
+}
+.teacher a:hover{
+    text-decoration: underline;
+    color: #00a9b8;
+    
+}
+.teacher img{
+    /* border: 1px solid red; */
+    border-radius: 50% 50%;
+    background-color: #bfe3e7;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.3); 
+}
+
+.teacherlist.junior .teacher > div > img{
+    background-color: #f0ad78;
+
+}
+
+/* ---------------購買堂數------------------ */
+
+.course_table_rwd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #bfe3e7;
+
+
+}
+.table_card{
+    /* border: 1px solid pink; */
+    margin: 0 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    background-color: white;
+
+}
+.table_card h3{
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* border: 1px solid green; */
+    color: white;
+    background-color: #00a9b8;
+}
+
+.table_card h4{
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 0 auto;
+    height: 80px;
+    text-align: bottom;
+    vertical-align: bottom;
+    /* border: 1px solid green; */
+    color: #003338;
+    color: #00a9b8;
+
+}
+.table_card h5{
+    font-size: 20px;
+    min-height: 55px;
+    color: #e37756;
+    -webkit-text-stroke: 1.2px #f0ad78;
+}
+
+
+.table_card p{
+    padding: 5px;
+    margin: 10px;
+
+}
+
+
+.table_card p button{
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: #00a9b8;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+
+.coures_buy p{
+    font-size: 20px;
+    color: #003338;
+    margin: 50px 0 0 0;
+}
+
+
+
+
+
+/* ================rwd=================== */
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+
+    /* ========線上熱門課程======= */
+    .onlinehot_group{
+        width: 100%;
+    }
+
+    /* ------真心推薦 ------*/
+    .push_list_block{
+        width: 100%;
+    }
+    .list_more{
+        padding-left: 20px;
+    }
+    /* ------購買堂數------- */
+
+    .table_card{
+        width: 42%;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 767px) and (min-width: 576px){
+
+    /* ==========三大優勢========= */
+
+    /* ---三大特色--- */
+
+    .point span{
+        display: none;
+    }
+
+
+    /* ========線上熱門課程======= */
+    .big a .hot_list h3{
+        width: 80%;
+        margin: 0 auto;
+        padding: 7px;
+    }
+    .onlinehot_group{
+        flex-direction: column;
+        width: 95%;
+    }
+    .onlinehot.big{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .onlinehot.big a{
+        margin: 0 auto;
+    
+    }
+    .onlinehot.little{
+        width: 100%;
+        display: inline-block;
+    }
+    .littleList{
+        display: block;
+        width: 100%;
+        overflow: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+    
+    }
+    .littleList a{
+        display: inline-block;
+        width: 180px;
+        padding: 10px;
+    }
+
+
+
+    /* ------真心推薦 ------*/
+    .push_list_block{
+        flex-direction: column;
+    }
+
+    .student_list{
+        width: 100%;
+        margin: auto;
+    }
+
+    .student_list h3{
+        margin-bottom: 0;
+    }
+    .studentpush{
+        padding: 5px;
+    }
+
+    .list_image{
+        width: 30%;
+    }
+    .list_image img{
+        margin: 0 auto;
+    }
+    .list_more{
+        padding-left: 10px;
+    }
+
+
+    /* ---------------購買堂數------------------ */
+
+    .course_table_rwd{
+        flex-wrap: wrap;
+        background-color: #bfe3e7;
+    }
+    .table_card{
+        width: 42%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 575px){
+
+    section{
+        padding-top: 70px;
+        margin: 0px auto;
+    }
+    .online_title h2{
+        font-size: 24px;
+    }
+    .online_title h3{
+        font-size: 16px;
+    }
+
+    /* 網頁小形次選單 */
+    .ol_nav{
+        padding: 10px 0;
+    }
+    .ol_bar li{
+        margin: 0 10px;
+    }
+
+    .ol_bar li a{
+        font-size: 12px;
+        padding: 10px 2px;
+    }
+
+
+    /* ==========三大優勢========= */
+
+    /* ---三大特色--- */
+
+    .other_notes{
+        transform: none;
+        font-size: 20px;
+        padding: 15px 5px;
+    }
+    .point span{
+        display: none;
+    }
+
+    .other_notes::before{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        background: #00a9b8;
+        z-index: 1;
+    }
+
+
+
+    /* -------影片------ */
+    .online_point.video{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .video iframe{
+        width: 80%;
+        height: 250px; 
+    }
+    .bt.login{
+        margin-top: 20px;
+    }
+
+    /* ========線上熱門課程======= */
+    .big a .hot_list h3{
+        width: 100%;
+        margin: 0 auto;
+        padding: 7px;
+    }
+    .onlinehot_group{
+        flex-direction: column;
+        width: 95%;
+    }
+    .onlinehot.big{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .onlinehot.big a{
+        margin: 0 auto;
+    
+    }
+    .onlinehot.little{
+        width: 100%;
+        display: inline-block;
+    }
+    .littleList{
+        display: block;
+        width: 100%;
+        overflow: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+    
+    }
+    .littleList a{
+        display: inline-block;
+        width: 150px;
+        padding: 10px;
+    }
+    
+
+
+
+    /* ------真心推薦 ------*/
+
+    .push_list_block{
+        flex-direction: column;
+    }
+
+    .student_list{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .student_list h3{
+        margin-bottom: 0;
+    }
+    .studentpush{
+        padding: 5px;
+    }
+
+    .list_image{
+        width: 30%;
+    }
+    .list_image img{
+        margin: 0 auto;
+    }
+    .list_more{
+        padding-left: 10px;
+    }
+
+
+    /* -----名師在你家------ */
+    .teacher{
+        margin: 0 10px;
+    }
+
+
+
+    .teacher img{
+        width: 100%;
+    }
+
+
+    /* ---------------購買堂數------------------ */
+    .course_table_rwd{
+        flex-wrap: wrap;
+        background-color: #bfe3e7;
+    }
+    .table_card{
+        width: 45%;
+        margin: 8px 8px;
+
+    }
+    .table_card h3{
+        font-size: 20px;
+    }
+    .table_card h4{
+        font-size: 16px;
+    }
+    .coures_buy p{
+        font-size: 16px;
+        margin: 50px 0 0 0;
+    }
+
+}
+
+
+
