@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="黛比全人教育中心">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>課程資訊｜DHE黛比全人教育中心</title>
+    <link rel="stylesheet" href="./css/course-side-all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/course.js"></script>
+    <script src="./js/footer.js"></script>
+
+    <!-- <script src="./js/course.js"></script> -->
+
+</head>
+<body>
+    <header class="header">
+        <input id="nav-toggle" type="checkbox">
+        <label for="nav-toggle" class="hamburger">
+        <div class="ham-origin">
+            <div class="ham-bar ham-bar_top"></div>
+            <div class="ham-bar ham-bar_middle"></div>
+            <div class="ham-bar ham-bar_bottom"></div>
+        </div>
+        </label>
+        <div class="logo_hd">
+            <a href="./index.html"  target="_self">
+                <img src="./images/logo/logo200.png" alt="LOGO圖片無法讀取">
+            </a>
+        </div>
+        <nav class="nav">      
+            <ul class="nav_bar A">
+                <li><a href="./teacher.html">師資介紹</a>
+                    <ul>
+                        <li><a href="./teacher.html" target="_self" id="heightTeacher">高中部</a></li>
+                        <li><a href="./teacher-juer.html" target="_self">國中部</a></li>
+                    </ul>
+                </li>
+                <li><a href="./course-height.html">高中課程</a>
+                    <ul>
+                        <li><a href="./course-height.html" class="-off" target="_self">數學</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">物理</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">生物</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">化學</a></li>
+                    </ul>
+                </li>
+                <li><a href="./course-juer.html">國中課程</a>
+                    <ul>
+                        <li><a href="./course-juer.html" class="-off" target="_self">數學</a></li>
+                        <li><a href="./course-juer2.html" class="-off" target="_self">理化</a></li>
+                    </ul>
+                </li>
+                <li><a href="./online.html">一對一教學</a>
+                    <ul>
+                        <li><a href="./online.html#online_title two" class="-off" target="_self">熱門課程</a></li>
+                        <li><a href="./online.html#online_title three" class="-off" target="_self">學員推薦</a></li>
+                        <li><a href="./online.html#online_title five" class="-off" target="_self">購買需知</a></li>
+                        <li><a href="./online.html#online_title five" class="-off" target="_self">費用說明</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a href="./about.html#roomA" class="-off" target="_self">分部資訊</a>
+                </li>
+                <li><a href="./about.html">關於DHE</a>
+                    <ul>
+                        <li><a href="./about.html#story" class="-off" target="_self">我們的故事</a></li>
+                        <li><a href="./about.html#educationA" class="-off" target="_self">教育理念</a></li>
+                        <li><a href="./about.html#groudupA" class="-off" target="_self">升學規劃</a></li>
+                    </ul>    
+                </li>
+            </ul>
+            <ul class="nav_bar B">
+                <li>
+                    <a href="./login.html" class="-off" target="_self">學員資源</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav_rwd">      
+            <div class="nav_bar_rwd A">
+                <div class="nav_bar_list">
+                    <h2 class="nav_switch">師資介紹</h2>                  
+                    <ul class="bar_list_list">
+                        <li><a href="./teacher.html" target="_self">高中部</a></li>
+                        <li><a href="./teacher-juer.html" target="_self">國中部</a></li>
+                    </ul>
+                </div>
+                <div class="nav_bar_list">
+                    <h2 class="nav_switch">高中課程</h2>
+                    <ul class="bar_list_list">
+                        <li><a href="./course-height.html" class="-off" target="_self">數學</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">物理</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">生物</a></li>
+                        <li><a href="./course-height2.html" class="-off" target="_self">化學</a></li>
+                    </ul>
+                </div>
+                <div class="nav_bar_list">
+                    <h2 class="nav_switch">國中課程</h2>
+                    <ul class="bar_list_list">
+                        <li><a href="./course-juer.html" class="-off" target="_self">數學</a></li>
+                        <li><a href="./course-juer2.html" class="-off" target="_self">理化</a></li>
+                    </ul>
+                </div>
+                <div class="nav_bar_list">
+                    <h2 class="nav_switch">一對一教學</h2>
+                    <ul class="bar_list_list">
+                        <li><a href="./online.html#online_title two" class="-off" target="_self">熱門課程</a></li>
+                        <li><a href="./online.html#online_title three" class="-off" target="_self">學員推薦</a></li>
+                        <li><a href="./online.html#online_title five" class="-off" target="_self">購買需知</a></li>
+                        <li><a href="./online.html#online_title five" class="-off" target="_self">費用說明</a></li>
+                    </ul>
+                </div> 
+                <div class="nav_bar_list nodown">
+                    <h2 class="nav_switch"><a href="about.html#roomA" class="-off" target="_self">分部資訊</a></h2>
+                </div>
+                <div class="nav_bar_list">
+                    <h2 class="nav_switch">關於DHE</h2>
+                    <ul class="bar_list_list">
+                        <li><a href="./about.html" class="-off" target="_self">我們的故事</a></li>
+                        <li><a href="./about.html#educationA" class="-off" target="_self">教育理念</a></li>
+                        <li><a href="./about.html#groudupA" class="-off" target="_self">升學規劃</a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class="nav_bar_rwd">
+                <div class="nav_bar_list nodown">
+                    <h2 class="nav_switch"><a href="./login.html" class="-off" target="_self">學員資源</a></h2>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="bn">
+        <h2>課程介紹-國中</h2>
+    </div>
+    <div class="breadcrumb">
+        <ol class="breadcrumb_list">
+            <li><a href="./index.html">首頁</a></li>
+            <li><a style="color:#00a9b8">國中課程：國中理化</a></li>
+        </ol>
+    </div>
+    <div class="aside_main">
+        <aside class="aside">
+            <div class="aside_list">
+                <h2>高中課程</h2>
+                <ul>
+                    <li><a href="./course-height.html">高中數學</a></li>
+                    <li><a href="./course-height2.html">高中化學</a></li>
+                    <li><a href="./course-height2.html">高中物理</a></li>
+                    <li><a href="./course-height2.html">高中生物</a></li>
+                    <li><a href="./course-height2.html">升學保證班</a></li>
+                </ul>
+            </div>
+            <div class="aside_list">
+                <h2>國中課程</h2>
+                <ul>
+                    <li><a href="./course-juer.html" class="">國中數學</a></li>
+                    <li><a href="./course-juer2.html" class=" -on">國中理化</a></li>
+                </ul>
+            </div>
+            <div class="aside_list">
+                <h2>一對一教學</h2>
+                <ul>
+                    <li><a>熱門課程</a></li>
+                    <li><a>購課需知</a></li>
+                    <li><a>相關問題</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main">
+            <section>
+                <div class="course height">
+                    <div class="tab_list_block">
+                        <div class="tab_list_bn">國中理化</div>
+                        <ul class="tab_list">
+                            <li><a href="#" class="tab " data-target="tab1">國中數學</a></li>
+                            <li class="getBig "><a href="#" class="tab -on" data-target="tab2">國中理化</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab_list_main">
+                        <div class="minutiae">
+                            <div class="grade grade_block">
+                                <ul class="grade_block_list">
+                                    <li><a href="#" class="tab -on" data-target="tab1">七年級</a></li>
+                                    <li><a href="#" class="tab " data-target="tab2">八年級</a></li>
+                                    <li><a href="#" class="tab " data-target="tab3">九年級</a></li>
+                                </ul>
+                            </div>
+                            <div class="grade grade_main">
+                                <div class="principles_up">
+                                    <div class="kind tab1 -show" >
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort1">國中理化(上)必勝班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort3">國中理化(上)必修班</button>></li>
+                                        </ul>
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort2">國中理化(下)暑期先修班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort5">國中理化先修班</button>></li>
+                                        </ul> 
+                                    </div>
+                                    <div class="kind tab2">
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort1">國中理化(上)秋季班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort3">國中理化(上)春季班</button>></li>
+                                        </ul>
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort2">國中理化(下)暑期先修班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort5">國中理化先修班</button>></li>
+                                        </ul> 
+                                    </div>
+                                    <div class="kind tab3">
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort1">國中理化(上)衝刺班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort3">國中理化(上)衝刺班</button>></li>
+                                        </ul>
+                                        <ul class="principles_list">
+                                            <li><button type="button" class="btn_toggle" data-target="sort2">國中理化(下)暑期先修班</button>></li>
+                                            <li><button type="button" class="btn_toggle" data-target="sort5">升高中先修班</button>></li>
+
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <div class="principles_bottom juer">
+                                    <div class="sort sort1">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的基本概念</li>
+                                                <li>簡單的邏輯概念</li>
+                                                <li>深入淺出的數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的基本概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的基本概念</li>
+                                                <li>簡單的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-01.png" alt="">
+                                            <a href="./teacher-side3.html">李樂老師</a>
+                                        </div>
+                                    </div>
+                                    <div class="sort sort2">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的進階概念</li>
+                                                <li>進階的邏輯概念</li>
+                                                <li>分析數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的進階概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的進階概念</li>
+                                                <li>深入的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-03.png" alt="">
+                                            <a href="">滴阿老師</a>
+                                        </div>
+                                    </div>
+                                    <div class="sort sort3">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的進階概念</li>
+                                                <li>進階的邏輯概念</li>
+                                                <li>分析數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的進階概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的進階概念</li>
+                                                <li>深入的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-03.png" alt="">
+                                            <a href="./teacher-side3.html">滴阿老師</a>
+                                        </div>
+                                    </div>
+                                    <div class="sort sort4">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的基本概念</li>
+                                                <li>簡單的邏輯概念</li>
+                                                <li>深入淺出的數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的基本概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的基本概念</li>
+                                                <li>簡單的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-01.png" alt="">
+                                            <a href="./teacher-side3.html">李樂老師</a>
+                                        </div>
+                                    </div>
+                                    <div class="sort sort5">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的進階概念</li>
+                                                <li>進階的邏輯概念</li>
+                                                <li>分析數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的進階概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的進階概念</li>
+                                                <li>深入的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-01.png" alt="">
+                                            <a href="./teacher-side3.html">李樂老師</a>
+                                        </div>
+                                    </div>
+                                    <div class="sort sort6">
+                                        <div class="principles_main ">
+                                            <h3>課程大綱 : </h3>
+                                            <ul>
+                                                <li>集合的基本概念</li>
+                                                <li>簡單的邏輯概念</li>
+                                                <li>深入淺出的數理</li>
+                                            </ul>
+                                            <ul>
+                                                <li>函數的基本概念</li>
+                                                <li>數與式</li>
+                                                <li>指數與對數</li>
+                                            </ul>
+                                            <ul>
+                                                <li>數學的基本概念</li>
+                                                <li>簡單的邏輯運算</li>
+                                            </ul>
+                                        </div>
+                                        <div class="principles_teahcer">
+                                            <h3>授課老師</h3>
+                                            <img src="./images/teacher/teacher_200-02.png" alt="">
+                                            <a href="./teacher-side3.html">理太老師</a>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="logo_ft">
+            <a href="./index.html" class="logoftA" target="_self">
+                <img src="./images/logo/logo200.PNG" alt="LOGO圖片無法讀取">
+            </a>
+            <div class="social">
+                <a href="./index.html" class="icon_img" target="_self">
+                    <img src="./images/other/fbicon_32.PNG" alt="LOGO圖片無法讀取">
+                </a>
+                <a href="./index.html" class="icon_img" target="_self">
+                    <img src="./images/other/yticon_32.PNG" alt="LOGO圖片無法讀取">
+                </a>
+                <a href="./index.html" class="icon_img" target="_self">
+                    <img src="./images/other/lineicon_32.PNG" alt="LOGO圖片無法讀取">
+                </a>
+            </div>
+        </div>
+        <div class="bar_ft">
+            <div class="ft_bar_list">
+                <h2 class="btn_switch active">師資介紹</h2>
+                <ul class="bt_list">
+                    <li><a href="./teacher.html" target="_self">高中部</a></li>
+                    <li><a href="./teacher-juer.html" target="_self">國中部</a></li>
+                </ul>
+            </div>
+            <div class="ft_bar_list">
+                <h2 class="btn_switch active">高中課程</h2>
+                <ul class="bt_list">
+                    <li><a href="./course-height.html" class="-off" target="_self">數學</a></li>
+                    <li><a href="./course-height2.html" class="-off" target="_self">物理</a></li>
+                    <li><a href="./course-height2.html" class="-off" target="_self">生物</a></li>
+                    <li><a href="./course-height2.html" class="-off" target="_self">化學</a></li>
+                </ul>
+            </div>
+            <div class="ft_bar_list">
+                <h2 class="btn_switch active">國中課程</h2>
+                <ul class="bt_list">
+                    <li><a href="./course-juer.html" class="-off" target="_self">數學</a></li>
+                    <li><a href="./course-juer2.html" class="-off" target="_self">理化</a></li>
+                </ul>
+            </div>
+            <div class="ft_bar_list">
+                <h2 class="btn_switch active">一對一教學</h2>
+                <ul class="bt_list">
+                    <li><a href="./online.html" class="-off" target="_self">熱門課程</a></li>
+                    <li><a href="./online.html" class="-off" target="_self">學員推薦</a></li>
+                    <li><a href="./online.html" class="-off" target="_self">購買需知</a></li>
+                    <li><a href="./online.html" class="-off" target="_self">費用說明</a></li>
+                </ul>
+            </div>  
+            <div class="ft_bar_list">
+                <h2 class="btn_switch active">關於DHE</h2>
+                <ul class="bt_list">
+                    <li><a href="./about.html#story" class="-off" target="_self">我們的故事</a></li>
+                    <li><a href="./about.html#educationA" class="-off" target="_self">教育理念</a></li>
+                    <li><a href="./about.html#groudupA" class="-off" target="_self">升學規劃</a></li>
+                    <li><a href="./about.html#roomA" class="-off" target="_self">各教室位置</a></li>
+                </ul>    
+            </div>
+            <div class="ft_bar_list">
+                <a href="#"><h2 class="btn_switch">學員資源</h2></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

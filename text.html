@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul{
+            display: inline-block;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .btn{
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 10px 15px;
+            margin-left: 20px;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        div>ul,.btn{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="imgList">
+            <li><img src="https://picsum.photos/id/1011/60/60"></li>
+            <li><img src="https://picsum.photos/id/1012/60/60"></li>
+            <li><img src="https://picsum.photos/id/1013/60/60"></li>
+            <li><img src="https://picsum.photos/id/1014/60/60"></li>
+            <li><img src="https://picsum.photos/id/1015/60/60"></li>
+            <li><img src="https://picsum.photos/id/1016/60/60"></li>
+        </ul>
+    
+    </div>
+        <div class="btn" id="btn">
+            我要<br>踩點
+        </div>
+
+    <div class="spotRefreContain spotHereList">
+        <div class="hereList">
+            <ul id="spotImgHereList">
+                <li><img src="./img/member/memPhoto_200x200-03.png" alt=""></li>
+                <li><img src="./img/member/memPhoto_200x200-03.png" alt=""></li>
+                <li><img src="./img/member/memPhoto_200x200-03.png" alt=""></li>
+                <li><img src="./img/member/memPhoto_200x200-03.png" alt=""></li>
+                <li><img src="./img/member/memPhoto_200x200-03.png" alt=""></li>
+            </ul>
+            <div class="hereNumBtn">+6</div>
+        </div>
+        <div class="hereAddBtn" id="hereAddBtn">
+            我要<br>踩點
+        </div>
+    </div>
+
+
+    <!-- 需求： 點擊我要踩點按鈕後，新增一個有img的li到最後一個-->
+    <!-- <script>
+        var imgList = document.getElementById("imgList");
+        var btn = document.getElementById("btn");
+        var num = 0;
+        function addOnePeople(){
+            num++;
+            let newLi = document.createElement('li');
+            let image = document.createElement('img');
+            // image.src = "./images/pep"+num+".png";
+            image.src = `./images/pep${num}.png`;
+            // image.style.width = '60px';
+            // image.style.height = '60px';
+
+            newLi.appendChild(image);
+            imgList.appendChild(newLi);
+        }
+        if(btn){
+            addEventListener("click",addOnePeople,false);
+        };
+
+    </script> -->
+
+    <script>
+        var btn = document.getElementsByClassName("btn")[0];
+            console.log(btn)
+        btn.addEventListener("click",function(){
+            alert("J")
+        },false)
+
+        var btn = document.getElementsByClassName("hereAddBtn")[0];
+            console.log(btn)
+        btn.addEventListener("click",function(){
+            alert("J")
+        },false)
+        
+    </script>
+
+
+</body>
+</html>
